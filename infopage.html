@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+
+<body>
+    <header>
+
+      
+        <div class="topnav">
+
+            <a href="index.html">Main</a>
+            <a href="infopage.html">Info</a>
+            <a href="newspage.html">News</a>
+            <a href="storepage.html">Store</a>
+
+
+
+            <div class="dropdown">
+                <button class="dropbtn">Games</button>
+                <div class="dropdown-content">
+                    <a href="brigandgame.html">Brigand</a>
+                    <a href="Robots And Duels.html">Rad</a>
+                    <a href="dappergame.html">Dapper</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="info">
+
+        <section class="howTo" onmouseout="infoDisplayRemove(this)" id="info" onmouseover="infoDisplay(this)">
+
+            <article class="howTo__flex" >
+                <div class="howTo__flex__text">
+                    <h2>What Is a RPG</h2>
+                    <p>
+                        Learn the basic concepts that makes up the majority of Roleplaying games and the terminology
+                        around and within it.
+
+                    </p>
+                </div>
+
+                <div class="flexHover" id="infoHover">
+                    <h2>RPG: Short for Roleplaying Game</h2>
+                    <p>
+                        RPG is a acronym, short for Roleplaying Game. Chances are you heard of them before. Either as a
+                        genre of videogames, or maybe you heard about Dungeon and Dragons.
+                        A roleplaying game is a form of collaborative storytelling and game that generally is run by
+                        throwing dice to determine certein outcomes within the narrative. Some
+                        games use other engines of chance, such as a deck of cards rather then dice. But dice are by far
+                        the most common.
+
+                        The charm and appeal of a roleplaying game lies in the fact that anyone with a smidge of imagination
+                        can play it. All you need is a couple of friends, some dice and whatever basic ruleset is needed to 
+                        understand the game. Depending on the game, the complexity of the game varies. Some are very rules light,
+                        others are heavy on the rules. Some emphesize combat, and making the player feel like a badass. Others 
+                        focus on charachter development and social interactions. There is a myriad of games out there. All with 
+                        their own sping on things. 
+
+                        Click the example button below for an example of one such games combat.
+                    
+                    </p>
+
+                    
+                    <a id="myBtn" class="span">Example</a>
+                   
+                </div>
+
+
+            </article>
+
+        </section>
+
+        <section class="whatIs" onmouseout="infoDisplayRemove(this)" id="how" onmouseover="infoDisplay(this)">
+            <article class="whatIs__flex">
+                <div class="whatIs__flex__text"></div>
+                <h2>Learn how to play RPG's</h2>
+                <p>
+                    A roleplaying game is a form of collaborative storytelling and game that generally is run by
+                    throwing dice to determine certein outcomes within the narrative.
+                    <span id="myBtn">Example</span>
+                </p>
+                </div>
+                <div class="howHover" id="howHover">
+                    <h3>Systems and Settings. Narrative vs Tactical</h3>
+                    <p>
+                        
+                        There are many different systems and settings out there. The hobby is big and ever growing more
+                        popular. More and more, Roleplaying games are hitting the mainstream. Chances are that you allready
+                         heard about Dungeons and Dragons. By far the largest brand, its far from alone or unique. There is
+                          a vibrant community out there all playing different games. Depending on what speaks to you, there is 
+                          everything from dark, bloody vampire games to light hearted games meant to play with your significant 
+                          other.   
+                        
+                    </p>
+
+                   
+                </div>
+
+            </article>
+
+        </section>
+        <section class="other" onmouseout="infoDisplayRemove(this)" id="other" onmouseover="infoDisplay(this)">
+            <article class="other__flex">
+                <div class="other__flex__text">
+                    <h2>A intricate and inviting hobby</h2>
+                    <p>Since rpg is about collaborative effort and storytelling, there are a few things to keep in mind.
+                        One of these is to make everyone at the table, digital or otherwise, are safe and comfterble.
+                        There can be
+                        settings or themes not everyone is comfterble with.
+
+                        Due to this, its commonly encourages to use something reffered to as safety tool. </p>
+                </div>
+                <div class="otherHover" id="otherHover">
+                    <h3>RPG: Short for Roleplaying Game</h3>
+                    <p>
+        
+                    </p>
+
+                   
+                </div>
+
+            </article>
+
+        </section>
+        <div></div>
+
+
+        <div id="popup" class="modal">
+
+
+            <div class="modalcontent">
+                <span class="close">&times;</span>
+                <p class="modalcontent__para"> 
+
+                   In Robots and Duels, you play as a duelist. This means that sometimes, you are forced to, due to circumstance, to defend yourself. 
+                   Unless of course you yourself choose to be the one who attack first. Regardless of the circumstance however, combat in RaD follows certein rules. 
+                </p>                
+                <p  class="modalcontent__para">  1) You roll as many number of die your swordplay or brawling skill allow. And you hit, you add your weapons damage to the number of successes.  
+                    2) A hit that exceeds the enemys armor score, does damage equal to remaining total
+                    3) That total is deducted from the opponents health pool, or HP.
+                </p>
+                <p  class="modalcontent__para">
+                   Below you can see an example of this
+
+                </p>
+
+
+                <h3>Example.</h3>
+
+
+                <div class="modalcontent__exampleCombat" id="exampleCombat">
+                <img src="assets/Haftigt.png" alt="" class="modalcontent__exampleCombat__image">
+
+                <p class="modalcontent__exampleCombat__para">   Your party (That is to say, the people with you) have encountered a man from your past. He has
+                    long sought revenge agains you. As you two argue, he pulls a gun. In this case, you have to
+                    options. Talk him out of it, or engage him in battle. Chose below what option you go with.</p>
+            
+
+                   <img src="assets/cool.png" alt="" id="fightImage" class="modalcontent__exampleCombat__image"> 
+                    <p class="exampleCombat__hp">Enemy HP </p> <p id="HP" class="modalcontent__exampleCombat__hp">30</p>
+
+                    <input type="number" min="1" max="6"> <input type="button" value="Roll">
+                    <div id="dice"></div>*
+
+                    <p id="breadText" class="modalcontent__exampleCombat__para"></p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer></footer>
+
+
+
+
+</body>
+
+
+<script type="text/javascript" src="info.js"></script>
+<script type="text/javascript" src="dice.js"></script>
+
+</html>
