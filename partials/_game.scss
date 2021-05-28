@@ -1,0 +1,322 @@
+.gameGrid {
+  display: grid;
+
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  align-items: center;
+  max-width: auto;
+  width: 100vw;
+
+  .title {
+    display: flex;
+    height: 40px;
+    max-height: 2%;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .about {
+    background-color: burlywood;
+    height: 100vh;
+    width: 100vw;
+    grid-column: 1;
+
+    &__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5%;
+      gap: 5%;
+
+      &__text {
+        display: inline-block;
+        color: black;
+        padding: 10%;
+
+        border-radius: 35px;
+        background: white;
+
+        &__para {
+          margin-top: 2%;
+        }
+      }
+
+      &__image {
+        border: black;
+        border-radius: 35px;
+        display: inline-block;
+        object-fit: cover;
+        grid-column: 2;
+        max-width: 100%;
+        max-height: 100%;
+        width: 400px;
+        height: auto;
+
+        
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .setting {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+    &__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5%;
+      gap: 5%;
+
+      &__text {
+        display: inline-block;
+        color: black;
+        padding: 10%;
+        grid-column: 2;
+        grid-row: 1;
+
+        border-radius: 35px;
+        background: white;
+
+        &__para {
+          margin-top: 2%;
+        }
+      }
+
+      &__image {
+        border: black;
+        border-radius: 35px;
+        display: inline-block;
+        object-fit: cover;
+        grid-column: 1;
+        max-width: 100%;
+        max-height: 100%;
+        width: 400px;
+        height: auto;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .system {
+    background-color: burlywood;
+    height: 100vh;
+    width: 100vw;
+
+    &__info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5%;
+      gap: 5%;
+
+      &__text {
+        display: inline-block;
+        color: black;
+        padding: 10%;
+        grid-column: 1;
+        grid-row: 1;
+
+        border-radius: 35px;
+        background: white;
+
+        &__para {
+          margin-top: 2%;
+        }
+      }
+
+      &__image {
+        border: black;
+        border-radius: 35px;
+        display: inline-block;
+        object-fit: cover;
+        grid-column: 2;
+        max-width: 100%;
+        max-height: 100%;
+        width: 600px;
+        height: auto;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .gameGrid {
+    display: grid;
+
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    align-items: center;
+    max-width: auto;
+    width: 100vw;
+
+    font-size: 10px;
+
+    .title {
+      display: flex;
+      height: 20px;
+      max-height: 2%;
+      width: 100vw;
+      max-width: 100%;
+      align-items: center;
+      align-content: center;
+    }
+    .about {
+      background-color: burlywood;
+      height: 100vh;
+      width: 100vw;
+      grid-column: 1;
+
+      &__info {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        &__text {
+          display: inline-block;
+          color: black;
+          grid-row: 1;
+          grid-column: 1;
+
+          border-radius: 35px;
+          background: white;
+
+          &__para {
+            margin-top: 2%;
+          }
+        }
+
+        &__image {
+          display: none;
+          border: black;
+          border-radius: 35px;
+          object-fit: cover;
+          grid-column: 1;
+          grid-row: 2;
+          max-width: 100%;
+          max-height: 100%;
+          width: 200px;
+          height: auto;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+
+    .setting {
+      background-color: black;
+      height: 100vh;
+      width: 100vw;
+
+      &__info {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        &__text {
+          display: inline-block;
+          color: black;
+          grid-row: 1;
+          grid-column: 1;
+
+          border-radius: 35px;
+          background: white;
+
+          &__para {
+            margin-top: 2%;
+          }
+        }
+
+        &__image {
+          display: none;
+          border: black;
+          border-radius: 35px;
+          object-fit: cover;
+          grid-column: 1;
+          grid-row: 1;
+          max-width: 100%;
+          max-height: 100%;
+          width: 200px;
+          height: auto;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+
+    .system {
+      background-color: burlywood;
+      height: 100vh;
+      width: 100vw;
+
+      &__info {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        
+        grid-template-columns: 1fr;
+       
+
+        &__text {
+          display: inline-block;
+          color: black;
+          grid-row: 1;
+          grid-column: 1;
+
+          border-radius: 35px;
+          background: white;
+
+          &__para {
+            margin-top: 2%;
+          }
+        }
+        &__text {
+          display: inline-block;
+          color: black;
+          padding: 10%;
+          grid-column: 1;
+          grid-row: 1;
+
+          border-radius: 35px;
+          background: white;
+
+          &__para {
+            margin-top: 2%;
+          }
+        }
+
+        &__image {
+          display: none;
+          border: black;
+          border-radius: 35px;
+          object-fit: cover;
+          grid-row: 2;
+          max-width: 100%;
+          max-height: 100%;
+          width: 200px;
+          height: auto;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    max-width: auto;
+    width: 100vw;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+  
+.dropbtn {
+  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #333;
+  color: white;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(71, 65, 65)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(71, 65, 65);
+}
+
+
+
+
+.info {
+  display: grid;
+  margin: 5%;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5%;
+  width: 90vw;
+  object-fit: contain;
+
+}
+
+.howTo {
+  grid-row: 1/3;
+  grid-column: 1;
+
+  border: solid 2px burlywood;
+  background: blanchedalmond;
+  padding: 10%;
+  border-radius: 35px;
+  width: 70%;
+  word-wrap: break-word;
+}
+
+.flexHover {
+  display: none;
+}
+
+.howTo:hover {
+  grid-row: 1/3;
+  grid-column: 1/3;
+
+  border: solid 2px brown;
+  padding: 10%;
+  background: burlywood;
+  border-radius: 35px;
+  position: absolute;
+  width: 70%;
+  word-wrap: break-word;
+
+}
+
+.span{color: red;}
+
+.whatIs {
+  grid-row: 1/3;
+  grid-column: 2;
+
+  border: solid 2px burlywood;
+  
+  background: blanchedalmond;
+  padding: 10%;
+  border-radius: 35px;
+  width: 70%;
+}
+
+.whatIs:hover {
+  grid-row: 1/3;
+  grid-column: 1/3;
+
+  border: solid 2px brown;
+  padding: 10%;
+  background: burlywood;
+  border-radius: 35px;
+  position: absolute;
+  width: 70%;
+
+  word-wrap: break-word;
+}
+
+.other {
+  grid-row: 1/3;
+  grid-column: 3;
+
+  border: solid 2px burlywood;
+  
+  background: blanchedalmond;
+  padding: 10%;
+  border-radius: 35px;
+  width: 70%;
+}
+
+.other:hover {
+  grid-row: 1/3;
+  grid-column: 1/3;
+
+  border: solid 2px brown;
+  padding: 10%;
+  background: burlywood; 
+  position: absolute;
+  width: 70%;
+
+  word-wrap: break-word;
+}
+
+.combatExample{display: none;
+
+&__HP{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+}
+
+&__image{width: 400px;
+height: auto;}
+
+}
